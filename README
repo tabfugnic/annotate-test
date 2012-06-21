@@ -1,0 +1,23 @@
+=== Testing the Annotator ===
+
+This project should work with newer versions of rails, but was built using rails 3.0.12
+
+1) Install RVM
+   curl -L https://get.rvm.io | bash -s stable --ruby
+
+2) Install Ruby 1.9.2
+   rvm install 1.9.3
+   rvm use ruby-1.9.3
+
+3) Install Bundler
+   gem install bundler
+
+4) Install Gems
+   bundle
+
+5) Run Server
+   rails s
+
+6) Visit with browser
+   127.0.0.1:3000/fix.html
+   127.0.0.1:3000/unfix.html

@@ -49,8 +49,8 @@
                 var options = {};
           // plugins
           $('#airlock').annotator()
-                       .annotator('setupPlugins', {tokenUrl: '/api/token'});
-
+                       .annotator('setupPlugins', {tokenUrl: '/api/token'})
+                       .annotator('addPlugin', 'Tags');
       });
     </script>
   </body>

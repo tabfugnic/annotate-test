@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>JS annotation test</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="javascripts/annotator-fix.js"></script>
+    <script src="javascripts/annotator-orig.js"></script>
 
     <!-- Annotator's styling and images -->
     <link rel="stylesheet" type="text/css" href="stylesheets/annotator.min.css">
@@ -49,8 +49,8 @@
                 var options = {};
           // plugins
           $('#airlock').annotator()
-                       .annotator('setupPlugins', {tokenUrl: '/api/token'});
-
+                       .annotator('setupPlugins', {tokenUrl: '/api/token'})
+                       .annotator('addPlugin', 'Tags');
       });
     </script>
   </body>
